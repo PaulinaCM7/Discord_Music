@@ -55,8 +55,6 @@ for (const file of commandFiles) {
 client.distube = new DisTube(client, {
   plugins: [
     new SpotifyPlugin({
-      parallel: true,
-      emitEventsAfterFetching: true,
       api: {
         clientId: process.env.SPOTIFY_CLIENT_ID,
         clientSecret: process.env.SPOTIFY_CLIENT_SECRET,
