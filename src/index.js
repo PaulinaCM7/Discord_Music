@@ -1,7 +1,7 @@
 // ============================================
 //   🎵 DISCORD MUSIC BOT — PUNTO DE ENTRADA
 // ============================================
-
+process.env.FFMPEG_PATH = require("ffmpeg-static");
 require("dotenv").config();
 const { Client, GatewayIntentBits, Collection } = require("discord.js");
 const { DisTube } = require("distube");
